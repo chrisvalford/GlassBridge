@@ -921,6 +921,7 @@
 		2F9A874A281BCD06004D1501 /* NNWE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NNWE.jpg; sourceTree = "<group>"; };
 		2F9A874B281BCD06004D1501 /* RYA TC4_E1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RYA TC4_E1.jpg"; sourceTree = "<group>"; };
 		2F9A8768281BCD6B004D1501 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2F9A876D281BCF4F004D1501 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -959,6 +960,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9A8768281BCD6B004D1501 /* .gitignore */,
+				2F9A876D281BCF4F004D1501 /* README.md */,
 				2F858DB5281A9D620098B05E /* Shared */,
 				2F858DC7281A9D630098B05E /* macOS */,
 				2F858DD0281A9D630098B05E /* Tests iOS */,
