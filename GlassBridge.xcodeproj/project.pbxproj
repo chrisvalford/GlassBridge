@@ -25,8 +25,6 @@
 		2F858E1D281A9E820098B05E /* DMWindAngleDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E03281A9E820098B05E /* DMWindAngleDialView.swift */; };
 		2F858E22281A9E820098B05E /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E05281A9E820098B05E /* GPSView.swift */; };
 		2F858E23281A9E820098B05E /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E05281A9E820098B05E /* GPSView.swift */; };
-		2F858E24281A9E820098B05E /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E05281A9E820098B05E /* GPSView.swift */; };
-		2F858E25281A9E820098B05E /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E05281A9E820098B05E /* GPSView.swift */; };
 		2F858E3E281A9E820098B05E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E0D281A9E820098B05E /* ContentView.swift */; };
 		2F858E3F281A9E820098B05E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E0D281A9E820098B05E /* ContentView.swift */; };
 		2F858E59281A9EBF0098B05E /* RYA TC4_E3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E45281A9EBF0098B05E /* RYA TC4_E3.jpg */; };
@@ -706,8 +704,8 @@
 		2F9A876C281BCD6B004D1501 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8768281BCD6B004D1501 /* .gitignore */; };
 		2F9A876F281BFB02004D1501 /* GPSView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */; };
 		2F9A8770281BFB02004D1501 /* GPSView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */; };
-		2F9A8771281BFB02004D1501 /* GPSView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */; };
-		2F9A8772281BFB02004D1501 /* GPSView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */; };
+		2FB0B264281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
+		2FB0B265281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -926,6 +924,7 @@
 		2F9A874B281BCD06004D1501 /* RYA TC4_E1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RYA TC4_E1.jpg"; sourceTree = "<group>"; };
 		2F9A8768281BCD6B004D1501 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPSView+Observed.swift"; sourceTree = "<group>"; };
+		2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Observed.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1035,7 +1034,10 @@
 		2F858DFE281A9E820098B05E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2F858E05281A9E820098B05E /* GPSView.swift */,
+				2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */,
 				2F858E0D281A9E820098B05E /* ContentView.swift */,
+				2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -1048,8 +1050,6 @@
 				2F858E02281A9E820098B05E /* DMInstrumentsViewController.swift */,
 				2F858E03281A9E820098B05E /* DMWindAngleDialView.swift */,
 				2F858E04281A9E820098B05E /* DMHeadingDial.swift */,
-				2F858E05281A9E820098B05E /* GPSView.swift */,
-				2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */,
 				2F858E06281A9E820098B05E /* GPSTextViewController.swift */,
 			);
 			path = Instruments;
@@ -1598,6 +1598,7 @@
 				2F85900E281AA2600098B05E /* STN.swift in Sources */,
 				2F858FAA281AA2600098B05E /* BSM.swift in Sources */,
 				2F85911A281AA2600098B05E /* VPW.swift in Sources */,
+				2FB0B264281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */,
 				2F859002281AA2600098B05E /* HDG.swift in Sources */,
 				2F859026281AA2600098B05E /* RMC.swift in Sources */,
 				2F85906E281AA2600098B05E /* GNS.swift in Sources */,
@@ -1820,6 +1821,7 @@
 				2F858EDB281AA00D0098B05E /* ISO8211Enums.swift in Sources */,
 				2F858FEF281AA2600098B05E /* VTG.swift in Sources */,
 				2F858ED7281AA00D0098B05E /* DDFFieldDefinition.swift in Sources */,
+				2FB0B265281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */,
 				2F859017281AA2600098B05E /* AIVDM.swift in Sources */,
 				2F858FFB281AA2600098B05E /* BWW.swift in Sources */,
 				2F858EBD281A9FCE0098B05E /* TCPConnection.swift in Sources */,
@@ -1883,7 +1885,6 @@
 				2F858FB0281AA2600098B05E /* R00.swift in Sources */,
 				2F858FC8281AA2600098B05E /* ETL.swift in Sources */,
 				2F85911C281AA2600098B05E /* VPW.swift in Sources */,
-				2F9A8771281BFB02004D1501 /* GPSView+Observed.swift in Sources */,
 				2F858FCC281AA2600098B05E /* GRS.swift in Sources */,
 				2F858FE4281AA2600098B05E /* XDR.swift in Sources */,
 				2F8590F0281AA2600098B05E /* RMM.swift in Sources */,
@@ -2000,7 +2001,6 @@
 				2F8590BC281AA2600098B05E /* RMI.swift in Sources */,
 				2F859108281AA2600098B05E /* ZTG.swift in Sources */,
 				2F859148281AA2600098B05E /* RTE.swift in Sources */,
-				2F858E24281A9E820098B05E /* GPSView.swift in Sources */,
 				2F85905C281AA2600098B05E /* GLL.swift in Sources */,
 				2F859098281AA2600098B05E /* ROT.swift in Sources */,
 				2F8590D0281AA2600098B05E /* MSK.swift in Sources */,
@@ -2065,7 +2065,6 @@
 				2F85915D281AA2600098B05E /* NMEAError.swift in Sources */,
 				2F85907D281AA2600098B05E /* DTM.swift in Sources */,
 				2F8590E1281AA2600098B05E /* GTD.swift in Sources */,
-				2F9A8772281BFB02004D1501 /* GPSView+Observed.swift in Sources */,
 				2F858EF1281AA00D0098B05E /* DDFRecord.swift in Sources */,
 				2F85906D281AA2600098B05E /* GBS.swift in Sources */,
 				2F858EFB281AA02D0098B05E /* Array+.swift in Sources */,
@@ -2144,7 +2143,6 @@
 				2F859071281AA2600098B05E /* GNS.swift in Sources */,
 				2F858EA5281A9FC50098B05E /* CommStateView.swift in Sources */,
 				2F859041281AA2600098B05E /* RMZ.swift in Sources */,
-				2F858E25281A9E820098B05E /* GPSView.swift in Sources */,
 				2F858FB1281AA2600098B05E /* R00.swift in Sources */,
 				2F858FE1281AA2600098B05E /* WNC.swift in Sources */,
 				2F858FC5281AA2600098B05E /* AAM.swift in Sources */,

@@ -10,10 +10,15 @@ import CoreData
 
 struct ContentView: View {
 
+    @StateObject private var observed = Observed()
+
     var body: some View {
         
         NavigationView {
+            VStack {
+                observed.chartImage
             GPSView()
+            }
                 .padding()
                 .navigationTitle("GlassBridge")
                 .toolbar {
