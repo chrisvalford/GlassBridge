@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20084" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="0.0.2">
+    <entity name="ChartCoordinate" representedClassName="ChartCoordinate" syncable="YES" codeGenerationType="class">
+        <attribute name="chartId" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="latitudeDegrees" optional="YES" attributeType="String"/>
+        <attribute name="latitudeDirection" optional="YES" attributeType="String"/>
+        <attribute name="latitudeMinutes" optional="YES" attributeType="String"/>
+        <attribute name="latitudeSeconds" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitudeDegrees" optional="YES" attributeType="String"/>
+        <attribute name="longitudeDirection" optional="YES" attributeType="String"/>
+        <attribute name="longitudeMinutes" optional="YES" attributeType="String"/>
+        <attribute name="longitudeSeconds" optional="YES" attributeType="String"/>
+        <attribute name="xPositionPoint" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="yPositionPoint" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="toChartExtentsBL" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartExtents" inverseName="toBottomLeft" inverseEntity="ChartExtents"/>
+        <relationship name="toChartExtentsBR" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartExtents" inverseName="toBottomRight" inverseEntity="ChartExtents"/>
+        <relationship name="toChartExtentsTL" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartExtents" inverseName="toTopLeft" inverseEntity="ChartExtents"/>
+        <relationship name="toChartExtentsTR" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartExtents" inverseName="toTopRight" inverseEntity="ChartExtents"/>
+        <relationship name="toWaypoint" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Waypoint" inverseName="toChartCoordinate" inverseEntity="Waypoint"/>
+    </entity>
+    <entity name="ChartExtents" representedClassName="ChartExtents" syncable="YES" codeGenerationType="class">
+        <attribute name="chartId" optional="YES" attributeType="String"/>
+        <attribute name="chartRange" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="chartTitle" optional="YES" attributeType="String"/>
+        <attribute name="imageHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="imageWidth" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="latitudePointsPerMile" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitudePointsPerMile" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="magnificationFactor" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="toBottomLeft" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartCoordinate" inverseName="toChartExtentsBL" inverseEntity="ChartCoordinate"/>
+        <relationship name="toBottomRight" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartCoordinate" inverseName="toChartExtentsBR" inverseEntity="ChartCoordinate"/>
+        <relationship name="toTopLeft" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartCoordinate" inverseName="toChartExtentsTL" inverseEntity="ChartCoordinate"/>
+        <relationship name="toTopRight" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartCoordinate" inverseName="toChartExtentsTR" inverseEntity="ChartCoordinate"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="NMEASettings" representedClassName="NMEASettings" syncable="YES" codeGenerationType="class">
+        <attribute name="deviceDescription" optional="YES" attributeType="String"/>
+        <attribute name="direction" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="ip4Address" optional="YES" attributeType="String"/>
+        <attribute name="modifiedOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="port" optional="YES" attributeType="String"/>
+        <attribute name="portDescription" optional="YES" attributeType="String"/>
+        <attribute name="via" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="RoutePlan" representedClassName="RoutePlan" syncable="YES" codeGenerationType="class">
+        <attribute name="arrivalDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="arrivalName" optional="YES" attributeType="String"/>
+        <attribute name="departureDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="departureName" optional="YES" attributeType="String"/>
+        <attribute name="estimatedDistance" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="estimatedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toWaypoints" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Waypoint" inverseName="toRoutePlan" inverseEntity="Waypoint"/>
+    </entity>
+    <entity name="Waypoint" representedClassName="Waypoint" syncable="YES" codeGenerationType="class">
+        <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dataToNextWaypoint" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toChartCoordinate" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChartCoordinate" inverseName="toWaypoint" inverseEntity="ChartCoordinate"/>
+        <relationship name="toRoutePlan" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="RoutePlan" inverseName="toWaypoints" inverseEntity="RoutePlan"/>
+    </entity>
+    <elements>
+        <element name="ChartCoordinate" positionX="-18" positionY="27" width="128" height="299"/>
+        <element name="ChartExtents" positionX="-54" positionY="0" width="128" height="209"/>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="NMEASettings" positionX="-36" positionY="9" width="128" height="149"/>
+        <element name="RoutePlan" positionX="-63" positionY="-9" width="128" height="149"/>
+        <element name="Waypoint" positionX="0" positionY="45" width="128" height="104"/>
+    </elements>
+</model>
