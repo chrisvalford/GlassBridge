@@ -6,7 +6,7 @@
 //  Copyright © 2020 Digital+Marine. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 import CoreData
 
 class StreamConnection: NSObject {

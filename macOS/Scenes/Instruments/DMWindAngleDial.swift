@@ -9,8 +9,8 @@
 //  http://www.paintcodeapp.com
 //
 
+import AppKit
 import Foundation
-import Cocoa
 
 public class DMWindAngleDial : NSObject {
 

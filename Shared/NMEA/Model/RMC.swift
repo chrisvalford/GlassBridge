@@ -96,6 +96,10 @@ final class RMC: NMEA0813Base {
     @Published var variation: NSDecimalNumber = 0 // (Easterly var. subtracts from true course)
     @Published var variationDirection: String = "" // E or W
     @Published var modeIndicator: String = "" // OPTIONAL, (A=Autonomous, D=Differential, E=Estimated, N=Data not valid)
+    
+    init() throws {
+        try super.init(rawData: "")
+    }
 
     override init(rawData: String)  throws {
 

@@ -6,7 +6,7 @@
 //  Copyright © 2017 marine.digital. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 import Combine
 
 class DMInstrumentsViewController: NSViewController {

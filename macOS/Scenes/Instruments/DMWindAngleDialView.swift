@@ -6,8 +6,8 @@
 //  Copyright © 2019 marine.digital. All rights reserved.
 //
 
+import AppKit
 import SwiftUI
-import Cocoa
 
 class DMWindAngleDialView: NSView {
 

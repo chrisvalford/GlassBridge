@@ -10,8 +10,7 @@ import Combine
 
 struct GPSView: View {
 
-    @ObservedObject var rmc: RMC = try! RMC(rawData:"$GPRMC,094144,A,0004.4087,N,0004.5195,W,1.7,74.9,030610,4.8,E,D*2B")
-    @EnvironmentObject private var gll: GLL
+    @StateObject private var observed = Observed()
 
     var body: some View {
         HStack {
@@ -40,8 +39,8 @@ struct GPSView: View {
                         Text("Lon:")
                     }
                     VStack{
-                        Text(rmc.latitiue.dmsString(padded: false) + " " + rmc.latitudeDirection)
-                        Text(rmc.longitude.dmsString(padded: false) + " " + rmc.longitudeDirection)
+                        Text(observed.rmcLatitude.dmsString(padded: false) + " " + observed.rmcLatitudeDirection)
+                        Text(observed.rmcLongitude.dmsString(padded: false) + " " + observed.rmcLongitudeDirection)
                         //Text(gll.latitude.dmsString(padded: false) + " " + gll.latitudeDirection)
                         //Text(gll.longitude.dmsString(padded: false) + " " + gll.longitudeDirection)
                     }
@@ -59,7 +58,7 @@ struct GPSView: View {
                     VStack{
                         Text("136º T")
                         Text("159º T")
-                        Text(rmc.sogKn.description + " kt")
+                        Text(observed.rmcSogKn.description + " kt")
                         Text("6.1 kt")
                     }
                 }
@@ -116,14 +115,11 @@ struct GPSView: View {
         .padding(.all)
         .border(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
         }
-
     }
-
 }
 
 struct GPSView_Previews: PreviewProvider {
     static var previews: some View {
-        GPSView(rmc: try! RMC(rawData:"$GPRMC,094144,A,34.4087,N,004.5195,W,1.7,74.9,030610,4.8,E,D*2B"))
-            .environmentObject(try! GLL(rawData:"$GPGLL,6004.4083,N,01940.5157,E,094140,A,D*4D"))
+        GPSView()
     }
 }

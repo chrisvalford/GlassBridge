@@ -46,6 +46,10 @@ class GLL: NMEA0813Base {
     var longitudeDirection: String = ""     // W         East/West
     var time: Int = 0                       // 225444    Fix taken at 22:54:44 UTC
     
+    init() throws {
+        try super.init(rawData: "")
+    }
+    
     override init(rawData: String) throws {
 
        do {

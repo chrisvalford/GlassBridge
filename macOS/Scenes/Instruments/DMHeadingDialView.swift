@@ -6,8 +6,8 @@
 //  Copyright © 2017 marine.digital. All rights reserved.
 //
 
+import AppKit
 import Foundation
-import Cocoa
 
 class DMHeadingDialView: NSView {
     

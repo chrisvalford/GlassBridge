@@ -5,7 +5,7 @@
 //  Created by Christopher Alford on 02.06.20.
 //
 
-import Cocoa
+import AppKit
 import Combine
 
 extension Notification.Name {
