@@ -36,7 +36,6 @@
 		2F858E67281A9EBF0098B05E /* RYA TC4_E5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E48281A9EBF0098B05E /* RYA TC4_E5.jpg */; };
 		2F858E68281A9EBF0098B05E /* RYA TC4_E5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E48281A9EBF0098B05E /* RYA TC4_E5.jpg */; };
 		2F858E6D281A9EBF0098B05E /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4A281A9EBF0098B05E /* RYA TC4_A.jpg */; };
-		2F858E6E281A9EBF0098B05E /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4A281A9EBF0098B05E /* RYA TC4_A.jpg */; };
 		2F858E6F281A9EBF0098B05E /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4A281A9EBF0098B05E /* RYA TC4_A.jpg */; };
 		2F858E70281A9EBF0098B05E /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4A281A9EBF0098B05E /* RYA TC4_A.jpg */; };
 		2F858E71281A9EBF0098B05E /* RYA TC4_C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4B281A9EBF0098B05E /* RYA TC4_C.jpg */; };
@@ -47,8 +46,6 @@
 		2F858E76281A9EBF0098B05E /* RYA TC4_E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4C281A9EBF0098B05E /* RYA TC4_E.jpg */; };
 		2F858E77281A9EBF0098B05E /* RYA TC4_E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4C281A9EBF0098B05E /* RYA TC4_E.jpg */; };
 		2F858E78281A9EBF0098B05E /* RYA TC4_E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4C281A9EBF0098B05E /* RYA TC4_E.jpg */; };
-		2F858E79281A9EBF0098B05E /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4D281A9EBF0098B05E /* NNWE.jpg */; };
-		2F858E7A281A9EBF0098B05E /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4D281A9EBF0098B05E /* NNWE.jpg */; };
 		2F858E7B281A9EBF0098B05E /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4D281A9EBF0098B05E /* NNWE.jpg */; };
 		2F858E7C281A9EBF0098B05E /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E4D281A9EBF0098B05E /* NNWE.jpg */; };
 		2F858E81281A9EBF0098B05E /* stfile.tif in Resources */ = {isa = PBXBuildFile; fileRef = 2F858E50281A9EBF0098B05E /* stfile.tif */; };
@@ -670,24 +667,14 @@
 		2F9A874D281BCD06004D1501 /* RYA_TC4_B.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8745281BCD06004D1501 /* RYA_TC4_B.jpeg */; };
 		2F9A874E281BCD06004D1501 /* RYA_TC4_B.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8745281BCD06004D1501 /* RYA_TC4_B.jpeg */; };
 		2F9A874F281BCD06004D1501 /* RYA_TC4_B.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8745281BCD06004D1501 /* RYA_TC4_B.jpeg */; };
-		2F9A8751281BCD06004D1501 /* RYA TC4_C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8746281BCD06004D1501 /* RYA TC4_C.jpg */; };
-		2F9A8752281BCD06004D1501 /* RYA TC4_C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8746281BCD06004D1501 /* RYA TC4_C.jpg */; };
-		2F9A8753281BCD06004D1501 /* RYA TC4_C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8746281BCD06004D1501 /* RYA TC4_C.jpg */; };
 		2F9A8754281BCD06004D1501 /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8747281BCD06004D1501 /* RYA TC4_A.jpg */; };
 		2F9A8755281BCD06004D1501 /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8747281BCD06004D1501 /* RYA TC4_A.jpg */; };
-		2F9A8756281BCD06004D1501 /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8747281BCD06004D1501 /* RYA TC4_A.jpg */; };
-		2F9A8757281BCD06004D1501 /* RYA TC4_A.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8747281BCD06004D1501 /* RYA TC4_A.jpg */; };
 		2F9A8758281BCD06004D1501 /* RYA TC4_E2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8748281BCD06004D1501 /* RYA TC4_E2.jpg */; };
 		2F9A8759281BCD06004D1501 /* RYA TC4_E2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8748281BCD06004D1501 /* RYA TC4_E2.jpg */; };
 		2F9A875A281BCD06004D1501 /* RYA TC4_E2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8748281BCD06004D1501 /* RYA TC4_E2.jpg */; };
 		2F9A875B281BCD06004D1501 /* RYA TC4_E2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8748281BCD06004D1501 /* RYA TC4_E2.jpg */; };
-		2F9A875D281BCD06004D1501 /* RYA TC4_E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8749281BCD06004D1501 /* RYA TC4_E.jpg */; };
-		2F9A875E281BCD06004D1501 /* RYA TC4_E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8749281BCD06004D1501 /* RYA TC4_E.jpg */; };
-		2F9A875F281BCD06004D1501 /* RYA TC4_E.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8749281BCD06004D1501 /* RYA TC4_E.jpg */; };
 		2F9A8760281BCD06004D1501 /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A874A281BCD06004D1501 /* NNWE.jpg */; };
 		2F9A8761281BCD06004D1501 /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A874A281BCD06004D1501 /* NNWE.jpg */; };
-		2F9A8762281BCD06004D1501 /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A874A281BCD06004D1501 /* NNWE.jpg */; };
-		2F9A8763281BCD06004D1501 /* NNWE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A874A281BCD06004D1501 /* NNWE.jpg */; };
 		2F9A8764281BCD06004D1501 /* RYA TC4_E1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A874B281BCD06004D1501 /* RYA TC4_E1.jpg */; };
 		2F9A8765281BCD06004D1501 /* RYA TC4_E1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A874B281BCD06004D1501 /* RYA TC4_E1.jpg */; };
 		2F9A8766281BCD06004D1501 /* RYA TC4_E1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A874B281BCD06004D1501 /* RYA TC4_E1.jpg */; };
@@ -698,6 +685,7 @@
 		2F9A876C281BCD6B004D1501 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8768281BCD6B004D1501 /* .gitignore */; };
 		2F9A876F281BFB02004D1501 /* GPSView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */; };
 		2F9A8770281BFB02004D1501 /* GPSView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */; };
+		2F9EB6B9281D1B7600A43846 /* iOS_TestNMEA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9EB6B8281D1B7600A43846 /* iOS_TestNMEA.swift */; };
 		2FB0B264281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
 		2FB0B265281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
 /* End PBXBuildFile section */
@@ -917,6 +905,8 @@
 		2F9A874B281BCD06004D1501 /* RYA TC4_E1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RYA TC4_E1.jpg"; sourceTree = "<group>"; };
 		2F9A8768281BCD6B004D1501 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2F9A876E281BFB02004D1501 /* GPSView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPSView+Observed.swift"; sourceTree = "<group>"; };
+		2F9EB6B8281D1B7600A43846 /* iOS_TestNMEA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_TestNMEA.swift; sourceTree = "<group>"; };
+		2FADBDC3281D1E6E00D1FCBC /* GlassBridge--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GlassBridge--macOS--Info.plist"; sourceTree = "<group>"; };
 		2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Observed.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -955,6 +945,7 @@
 		2F858DB0281A9D620098B05E = {
 			isa = PBXGroup;
 			children = (
+				2FADBDC3281D1E6E00D1FCBC /* GlassBridge--macOS--Info.plist */,
 				2F9A8768281BCD6B004D1501 /* .gitignore */,
 				2F858DB5281A9D620098B05E /* Shared */,
 				2F858DC7281A9D630098B05E /* macOS */,
@@ -1011,6 +1002,7 @@
 				2F858F12281AA0530098B05E /* iOS_TestDDFModule.swift */,
 				2F858F13281AA0530098B05E /* iOS_TestDDFSubfieldDefinition.swift */,
 				2F858DD3281A9D630098B05E /* Tests_iOSLaunchTests.swift */,
+				2F9EB6B8281D1B7600A43846 /* iOS_TestNMEA.swift */,
 			);
 			path = "Tests iOS";
 			sourceTree = "<group>";
@@ -1448,7 +1440,6 @@
 				2F858E59281A9EBF0098B05E /* RYA TC4_E3.jpg in Resources */,
 				2F9A8760281BCD06004D1501 /* NNWE.jpg in Resources */,
 				2F858E71281A9EBF0098B05E /* RYA TC4_C.jpg in Resources */,
-				2F858E79281A9EBF0098B05E /* NNWE.jpg in Resources */,
 				2F858F0D281AA0340098B05E /* CATALOG.031 in Resources */,
 				2F858E91281A9EBF0098B05E /* stfile.icns in Resources */,
 				2F9A874C281BCD06004D1501 /* RYA_TC4_B.jpeg in Resources */,
@@ -1460,7 +1451,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F858E76281A9EBF0098B05E /* RYA TC4_E.jpg in Resources */,
-				2F9A875D281BCD06004D1501 /* RYA TC4_E.jpg in Resources */,
 				2F858E82281A9EBF0098B05E /* stfile.tif in Resources */,
 				2F9A8755281BCD06004D1501 /* RYA TC4_A.jpg in Resources */,
 				2F9A876A281BCD6B004D1501 /* .gitignore in Resources */,
@@ -1471,12 +1461,9 @@
 				2F858E8E281A9EBF0098B05E /* d-sub 9.jpg in Resources */,
 				2F858E66281A9EBF0098B05E /* RYA TC4_E5.jpg in Resources */,
 				2F9A8765281BCD06004D1501 /* RYA TC4_E1.jpg in Resources */,
-				2F858E6E281A9EBF0098B05E /* RYA TC4_A.jpg in Resources */,
 				2F858E5A281A9EBF0098B05E /* RYA TC4_E3.jpg in Resources */,
 				2F9A8761281BCD06004D1501 /* NNWE.jpg in Resources */,
 				2F858E72281A9EBF0098B05E /* RYA TC4_C.jpg in Resources */,
-				2F9A8751281BCD06004D1501 /* RYA TC4_C.jpg in Resources */,
-				2F858E7A281A9EBF0098B05E /* NNWE.jpg in Resources */,
 				2F858F0E281AA0340098B05E /* CATALOG.031 in Resources */,
 				2F858E92281A9EBF0098B05E /* stfile.icns in Resources */,
 				2F9A874D281BCD06004D1501 /* RYA_TC4_B.jpeg in Resources */,
@@ -1493,7 +1480,6 @@
 				2F858E7B281A9EBF0098B05E /* NNWE.jpg in Resources */,
 				2F858E73281A9EBF0098B05E /* RYA TC4_C.jpg in Resources */,
 				2F858E77281A9EBF0098B05E /* RYA TC4_E.jpg in Resources */,
-				2F9A8756281BCD06004D1501 /* RYA TC4_A.jpg in Resources */,
 				2F858E93281A9EBF0098B05E /* stfile.icns in Resources */,
 				2F9A875A281BCD06004D1501 /* RYA TC4_E2.jpg in Resources */,
 				2F858E87281A9EBF0098B05E /* DE-9scaled.tif in Resources */,
@@ -1501,12 +1487,9 @@
 				2F9A874E281BCD06004D1501 /* RYA_TC4_B.jpeg in Resources */,
 				2F858E5B281A9EBF0098B05E /* RYA TC4_E3.jpg in Resources */,
 				2F9A8766281BCD06004D1501 /* RYA TC4_E1.jpg in Resources */,
-				2F9A875E281BCD06004D1501 /* RYA TC4_E.jpg in Resources */,
-				2F9A8752281BCD06004D1501 /* RYA TC4_C.jpg in Resources */,
 				2F858E67281A9EBF0098B05E /* RYA TC4_E5.jpg in Resources */,
 				2F858E8F281A9EBF0098B05E /* d-sub 9.jpg in Resources */,
 				2F858F0F281AA0340098B05E /* CATALOG.031 in Resources */,
-				2F9A8762281BCD06004D1501 /* NNWE.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1520,7 +1503,6 @@
 				2F858E7C281A9EBF0098B05E /* NNWE.jpg in Resources */,
 				2F858E74281A9EBF0098B05E /* RYA TC4_C.jpg in Resources */,
 				2F858E78281A9EBF0098B05E /* RYA TC4_E.jpg in Resources */,
-				2F9A8757281BCD06004D1501 /* RYA TC4_A.jpg in Resources */,
 				2F858E94281A9EBF0098B05E /* stfile.icns in Resources */,
 				2F9A875B281BCD06004D1501 /* RYA TC4_E2.jpg in Resources */,
 				2F858E88281A9EBF0098B05E /* DE-9scaled.tif in Resources */,
@@ -1528,12 +1510,9 @@
 				2F9A874F281BCD06004D1501 /* RYA_TC4_B.jpeg in Resources */,
 				2F858E5C281A9EBF0098B05E /* RYA TC4_E3.jpg in Resources */,
 				2F9A8767281BCD06004D1501 /* RYA TC4_E1.jpg in Resources */,
-				2F9A875F281BCD06004D1501 /* RYA TC4_E.jpg in Resources */,
-				2F9A8753281BCD06004D1501 /* RYA TC4_C.jpg in Resources */,
 				2F858E68281A9EBF0098B05E /* RYA TC4_E5.jpg in Resources */,
 				2F858E90281A9EBF0098B05E /* d-sub 9.jpg in Resources */,
 				2F858F10281AA0340098B05E /* CATALOG.031 in Resources */,
-				2F9A8763281BCD06004D1501 /* NNWE.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1937,6 +1916,7 @@
 				2F858FE0281AA2600098B05E /* WNC.swift in Sources */,
 				2F858F0A281AA02D0098B05E /* CChar+.swift in Sources */,
 				2F859048281AA2600098B05E /* ASM.swift in Sources */,
+				2F9EB6B9281D1B7600A43846 /* iOS_TestNMEA.swift in Sources */,
 				2F8590A8281AA2600098B05E /* BWC.swift in Sources */,
 				2F858FA0281AA2600098B05E /* NavigationStatus.swift in Sources */,
 				2F859044281AA2600098B05E /* RMA.swift in Sources */,
@@ -2380,6 +2360,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GlassBridge--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2408,6 +2389,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GlassBridge--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

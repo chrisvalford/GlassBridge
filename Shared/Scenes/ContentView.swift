@@ -92,11 +92,16 @@ struct DetailView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .onAppear {
-                let path = Bundle.main.path(forResource: path, ofType: "jpeg")!
+                guard let path = Bundle.main.path(forResource: path, ofType: "jpeg") else { return
+                }
                 print(path)
-                let url = URL(string: path)
-                image = Image(systemName: "map")
-                    .data(url: url!)!
+                guard let url = URL(string: "file://" + path)  else {
+                    return
+                }
+                guard let img = Image(systemName: "map").data(url: url) else {
+                    return
+                }
+                self.image = img
             }
     }
 }
