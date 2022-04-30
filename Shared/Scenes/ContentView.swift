@@ -14,7 +14,7 @@ import CoreData
 struct ContentView: View {
     
     @StateObject private var observed = Observed()
-    @State private var isActive = false
+    //@State private var isActive = false
     
     let maps: [String] = ["RYA_TC4_B", "NNWE", "RYA_TC4_E"]
     
@@ -27,15 +27,16 @@ struct ContentView: View {
                         .background(Color.gray)
                 }
                 List(maps, id: \.self) { path in
-                    NavigationLink(destination: DetailView(path: path), isActive: $isActive) {
+                    NavigationLink(destination: DetailView(path: path)) {
+                                   //, isActive: $isActive) {
                         Text(path)
                     }
                 }
             }
         }
-        .onAppear {
-            self.isActive = true
-        }
+       // .onAppear {
+            //self.isActive = true
+       // }
         .padding()
         .navigationTitle("GlassBridge")
         .toolbar {
