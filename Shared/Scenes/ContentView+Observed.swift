@@ -12,7 +12,7 @@ extension ContentView {
     class Observed: ObservableObject {
         @Published var chartImage = Image("map")
 
-        var chartId = "RYA TC4_B"
+        var chartId = "map"
         var fullWidth: Float?
         var fullHeight: Float?
         var magnificationFactor: Float = 0.2

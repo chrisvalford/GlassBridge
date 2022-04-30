@@ -14,18 +14,27 @@ import CoreData
 struct ContentView: View {
     
     @StateObject private var observed = Observed()
+    @State private var isActive = false
     
-    let maps: [String] = ["RYA_TC4_B"]
+    let maps: [String] = ["RYA_TC4_B", "NNWE", "RYA_TC4_E"]
     
     var body: some View {
         
         NavigationView {
-            ScrollView {
-                GPSView()
-                List(maps, id: \.self) { image in
-                    DetailView(path: image)
+            VStack {
+                ScrollView {
+                    GPSView()
+                        .background(Color.gray)
+                }
+                List(maps, id: \.self) { path in
+                    NavigationLink(destination: DetailView(path: path), isActive: $isActive) {
+                        Text(path)
+                    }
                 }
             }
+        }
+        .onAppear {
+            self.isActive = true
         }
         .padding()
         .navigationTitle("GlassBridge")
@@ -92,7 +101,7 @@ struct DetailView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .onAppear {
-                guard let path = Bundle.main.path(forResource: path, ofType: "jpeg") else { return
+                guard let path = Bundle.main.path(forResource: path, ofType: "jpg") else { return
                 }
                 print(path)
                 guard let url = URL(string: "file://" + path)  else {
