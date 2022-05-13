@@ -641,8 +641,6 @@
 		2F859183281AA3810098B05E /* NSNotification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F859181281AA3810098B05E /* NSNotification+Name.swift */; };
 		2F859184281AA3810098B05E /* NSNotification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F859181281AA3810098B05E /* NSNotification+Name.swift */; };
 		2F859185281AA3810098B05E /* NSNotification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F859181281AA3810098B05E /* NSNotification+Name.swift */; };
-		2F859186281AA67C0098B05E /* DMHeadingDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E00281A9E820098B05E /* DMHeadingDialView.swift */; };
-		2F859187281AA67D0098B05E /* DMHeadingDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E00281A9E820098B05E /* DMHeadingDialView.swift */; };
 		2F859188281AA6820098B05E /* DMWindAngleDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E01281A9E820098B05E /* DMWindAngleDial.swift */; };
 		2F85918B281AA7260098B05E /* GlassBridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F858DB6281A9D620098B05E /* GlassBridge.xcdatamodeld */; };
 		2F85918C281AA7260098B05E /* GlassBridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F858DB6281A9D620098B05E /* GlassBridge.xcdatamodeld */; };
@@ -721,7 +719,6 @@
 		2F858DD9281A9D630098B05E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F858DDD281A9D630098B05E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2F858DDF281A9D630098B05E /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
-		2F858E00281A9E820098B05E /* DMHeadingDialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMHeadingDialView.swift; sourceTree = "<group>"; };
 		2F858E01281A9E820098B05E /* DMWindAngleDial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMWindAngleDial.swift; sourceTree = "<group>"; };
 		2F858E02281A9E820098B05E /* DMInstrumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMInstrumentsViewController.swift; sourceTree = "<group>"; };
 		2F858E03281A9E820098B05E /* DMWindAngleDialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMWindAngleDialView.swift; sourceTree = "<group>"; };
@@ -1025,7 +1022,6 @@
 		2F858DFF281A9E820098B05E /* Instruments */ = {
 			isa = PBXGroup;
 			children = (
-				2F858E00281A9E820098B05E /* DMHeadingDialView.swift */,
 				2F858E01281A9E820098B05E /* DMWindAngleDial.swift */,
 				2F858E02281A9E820098B05E /* DMInstrumentsViewController.swift */,
 				2F858E03281A9E820098B05E /* DMWindAngleDialView.swift */,
@@ -1674,7 +1670,6 @@
 				2F858FAF281AA2600098B05E /* R00.swift in Sources */,
 				2F858EB3281A9FCE0098B05E /* StreamConnection.swift in Sources */,
 				2F859037281AA2600098B05E /* RPM.swift in Sources */,
-				2F859186281AA67C0098B05E /* DMHeadingDialView.swift in Sources */,
 				2F859147281AA2600098B05E /* RTE.swift in Sources */,
 				2F858FDF281AA2600098B05E /* WNC.swift in Sources */,
 				2F859137281AA2600098B05E /* FSI.swift in Sources */,
@@ -2017,7 +2012,6 @@
 				2F858F03281AA02D0098B05E /* String+.swift in Sources */,
 				2F859089281AA2600098B05E /* SNU.swift in Sources */,
 				2F858DE0281A9D630098B05E /* Tests_macOSLaunchTests.swift in Sources */,
-				2F859187281AA67D0098B05E /* DMHeadingDialView.swift in Sources */,
 				2F85915D281AA2600098B05E /* NMEAError.swift in Sources */,
 				2F85907D281AA2600098B05E /* DTM.swift in Sources */,
 				2F8590E1281AA2600098B05E /* GTD.swift in Sources */,

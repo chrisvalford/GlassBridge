@@ -97,7 +97,9 @@ struct DetailView: View {
     @State var image = Image(systemName: "map")
 
     var body: some View {
-        Text("Detail view")
+//        Text("Detail view")
+        VStack {
+        WindAngleInstrumentView()
         image
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -113,5 +115,6 @@ struct DetailView: View {
                 }
                 self.image = img
             }
+        }
     }
 }

@@ -11,8 +11,34 @@
 
 import AppKit
 import Foundation
+import SwiftUI
 
-public class DMWindAngleDial : NSObject {
+struct WindAngleInstrumentView: View {
+
+    var body: some View {
+        WindAngleInstrument()
+    }
+}
+
+struct WindAngleViewInstrument_Previews: PreviewProvider {
+    static var previews: some View {
+        WindAngleView()
+    }
+}
+
+struct WindAngleInstrument: NSViewRepresentable {
+    typealias NSViewType = DMWindAngleDial
+
+    public func makeNSView(context: Context) -> DMWindAngleDial {
+        return DMWindAngleDial()
+    }
+
+    public func updateNSView(_ nsView: DMWindAngleDial, context: Context) {
+        DMWindAngleDial.drawDMWindAngleDial(frame: NSRect(x: 0, y: 0, width: 200, height: 200), pointerAngle: CGFloat(-0.8), windVelocity: "000.0", mode: "TRUE")
+    }
+}
+
+class DMWindAngleDial : NSView {
 
     //// Cache
 
@@ -38,7 +64,10 @@ public class DMWindAngleDial : NSObject {
 
     @objc dynamic public class func drawDMWindAngleDial(frame: NSRect = NSRect(x: 0, y: 0, width: 200, height: 200), pointerAngle: CGFloat = -0.8, windVelocity: String = "000.0", mode: String = "TRUE") {
         //// General Declarations
-        let context = NSGraphicsContext.current!.cgContext
+        guard let context = NSGraphicsContext.current?.cgContext else {
+            print("Unable to fetch cgContext")
+            return
+        }
         // This non-generic function dramatically improves compilation times of complex expressions.
         func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
@@ -317,123 +346,91 @@ public class DMWindAngleDial : NSObject {
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: 45.86, y: -80.59)
         context.rotate(by: 30 * CGFloat.pi/180)
-
         let rM150Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         rM150Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// RM120 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: 80.57, y: -47.83)
         context.rotate(by: 60 * CGFloat.pi/180)
-
         let rM120Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         rM120Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// RM90 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: 93.69, y: -1.97)
         context.rotate(by: 90 * CGFloat.pi/180)
-
         let rM90Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         rM90Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// RM60 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: 63.55, y: 38.3)
         context.rotate(by: -60 * CGFloat.pi/180)
-
         let rM60Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         rM60Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// RM30 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: 36.13, y: 64.03)
         context.rotate(by: -30 * CGFloat.pi/180)
-
         let rM30Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         rM30Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// LM150 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: -47.83, y: -80.59)
         context.rotate(by: -30 * CGFloat.pi/180)
-
         let lM150Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         lM150Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// LM120 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: -80.59, y: -45.56)
         context.rotate(by: -60 * CGFloat.pi/180)
-
         let lM120Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         lM120Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// LM90 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: -74.03, y: -1.97)
         context.rotate(by: 90 * CGFloat.pi/180)
-
         let lM90Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         lM90Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// LM60 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: -63.56, y: 35.38)
         context.rotate(by: 60 * CGFloat.pi/180)
-
         let lM60Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         lM60Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// LM30 Drawing
         NSGraphicsContext.saveGraphicsState()
         context.translateBy(x: -38, y: 63.56)
         context.rotate(by: 30 * CGFloat.pi/180)
-
         let lM30Path = NSBezierPath(roundedRect: NSRect(x: 0, y: 0, width: 2.62, height: 19.66), xRadius: 1.31, yRadius: 1.31)
         NSColor.lightGray.setFill()
         lM30Path.fill()
-
         NSGraphicsContext.restoreGraphicsState()
-
-
-
 
         //// Minor
         //// R140 Drawing
@@ -441,114 +438,91 @@ public class DMWindAngleDial : NSObject {
         NSColor.lightGray.setFill()
         r140Path.fill()
 
-
         //// R130 Drawing
         let r130Path = NSBezierPath(ovalIn: NSRect(x: 65.5, y: -53.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r130Path.fill()
-
 
         //// R110 Drawing
         let r110Path = NSBezierPath(ovalIn: NSRect(x: 77.5, y: -30.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r110Path.fill()
 
-
         //// R100 Drawing
         let r100Path = NSBezierPath(ovalIn: NSRect(x: 81.5, y: -15.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r100Path.fill()
-
 
         //// R80 Drawing
         let r80Path = NSBezierPath(ovalIn: NSRect(x: 81.5, y: 12.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r80Path.fill()
 
-
         //// R70 Drawing
         let r70Path = NSBezierPath(ovalIn: NSRect(x: 77.5, y: 26.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r70Path.fill()
-
 
         //// R50 Drawing
         let r50Path = NSBezierPath(ovalIn: NSRect(x: 65.5, y: 51.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r50Path.fill()
 
-
         //// R40 Drawing
         let r40Path = NSBezierPath(ovalIn: NSRect(x: 57.5, y: 60.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r40Path.fill()
-
 
         //// R20 Drawing
         let r20Path = NSBezierPath(ovalIn: NSRect(x: 37, y: 75, width: 2, height: 2))
         NSColor.lightGray.setFill()
         r20Path.fill()
 
-
         //// L140 Drawing
         let l140Path = NSBezierPath(ovalIn: NSRect(x: -58.5, y: -62.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l140Path.fill()
-
 
         //// L130 Drawing
         let l130Path = NSBezierPath(ovalIn: NSRect(x: -66.5, y: -53.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l130Path.fill()
 
-
         //// L110 Drawing
         let l110Path = NSBezierPath(ovalIn: NSRect(x: -78.5, y: -29.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l110Path.fill()
-
 
         //// L100 Drawing
         let l100Path = NSBezierPath(ovalIn: NSRect(x: -82.5, y: -15.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l100Path.fill()
 
-
         //// L80 Drawing
         let l80Path = NSBezierPath(ovalIn: NSRect(x: -82.5, y: 12.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l80Path.fill()
-
 
         //// L70 Drawing
         let l70Path = NSBezierPath(ovalIn: NSRect(x: -78.5, y: 26.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l70Path.fill()
 
-
         //// L50 Drawing
         let l50Path = NSBezierPath(ovalIn: NSRect(x: -68.5, y: 50.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l50Path.fill()
-
 
         //// L40 Drawing
         let l40Path = NSBezierPath(ovalIn: NSRect(x: -59.5, y: 60.5, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l40Path.fill()
 
-
         //// L20 Drawing
         let l20Path = NSBezierPath(ovalIn: NSRect(x: -39, y: 75, width: 2, height: 2))
         NSColor.lightGray.setFill()
         l20Path.fill()
-
-
-
-
-
         NSGraphicsContext.restoreGraphicsState()
-
 
         //// TextDisplay
         //// Rectangle 14 Drawing
@@ -558,7 +532,6 @@ public class DMWindAngleDial : NSObject {
         NSColor.darkGray.setStroke()
         rectangle14Path.lineWidth = 1
         rectangle14Path.stroke()
-
 
         //// Text 9 Drawing
         let text9Rect = NSRect(x: textDisplay.minX + 3, y: textDisplay.minY + 3, width: 77, height: 13)
@@ -577,7 +550,6 @@ public class DMWindAngleDial : NSObject {
         mode.draw(in: text9TextRect.offsetBy(dx: 0, dy: 1.5), withAttributes: text9FontAttributes)
         NSGraphicsContext.restoreGraphicsState()
 
-
         //// Text 10 Drawing
         let text10Rect = NSRect(x: textDisplay.minX, y: textDisplay.minY + 15, width: 83, height: 32)
         let text10Style = NSMutableParagraphStyle()
@@ -594,9 +566,6 @@ public class DMWindAngleDial : NSObject {
         text10Rect.clip()
         windVelocity.draw(in: text10TextRect.offsetBy(dx: 0, dy: 3), withAttributes: text10FontAttributes)
         NSGraphicsContext.restoreGraphicsState()
-
-
-
 
         //// Bezel Drawing
         let bezelPath = NSBezierPath()
