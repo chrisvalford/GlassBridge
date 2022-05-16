@@ -9,23 +9,66 @@
 //  http://www.paintcodeapp.com
 //
 
-import AppKit
+import UIKit
 import Foundation
 import SwiftUI
 
 struct WindAngleInstrumentView: View {
 
+    static let color = Color(red: 1.000, green: 0.873, blue: 0.000)
+    static let color2 = Color(red: 0.589, green: 0.589, blue: 0.589)
+    static let color3 = Color(red: 1.000, green: 0.622, blue: 0.000)
+    static let color4 = Color(red: 0.698, green: 0.824, blue: 0.734)
+    static let color5 = Color(red: 0.341, green: 0.978, blue: 0.000)
+    static let color6 = Color(red: 0.333, green: 0.333, blue: 0.333)
+
+    // This non-generic function dramatically improves compilation times of complex expressions.
+    func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
+
+    struct DialBackgroundPath: Shape {
+        func path(in rect: CGRect) -> Path {
+            let group: CGRect = CGRect(x: rect.minX + fastFloor((rect.width - 190) * 0.50000 + 0.5), y: rect.minY + fastFloor((rect.height - 190) * 0.50000 + 0.5), width: 190, height: 190)
+            let path = Path(ellipseIn: CGRect(x: group.minX, y: group.minY, width: 190, height: 190))
+            return path
+        }
+    }
+
+    struct BowIndicator: Shape {
+        func path(in rect: CGRect) -> Path {
+            let group: CGRect = CGRect(x: rect.minX + fastFloor((rect.width - 190) * 0.50000 + 0.5), y: rect.minY + fastFloor((rect.height - 190) * 0.50000 + 0.5), width: 190, height: 190)
+            var path = Path()
+            path.move(to: CGPoint(x: group.minX + 63, y: group.minY + 85.83))
+            path.addCurve(to: CGPoint(x: group.minX + 71.03, y: group.minY + 131.69),
+                          control1: CGPoint(x: group.minX + 63, y: group.minY + 85.83),
+                          control2: CGPoint(x: group.minX + 63, y: group.minY + 110.72))
+            path.addCurve(to: CGPoint(x: group.minX + 95.1, y: group.minY + 172.31),
+                          control1: CGPoint(x: group.minX + 79.05, y: group.minY + 152.66),
+                          control2: CGPoint(x: group.minX + 95.1, y: group.minY + 172.31))
+            path.move(to: CGPoint(x: group.minX + 127.21, y: group.minY + 85.83))
+            path.addCurve(to: CGPoint(x: group.minX + 119.18, y: group.minY + 131.69), control1: CGPoint(x: group.minX + 127.21, y: group.minY + 85.83), control2: CGPoint(x: group.minX + 127.21, y: group.minY + 110.72))
+            path.addCurve(to: CGPoint(x: group.minX + 95.1, y: group.minY + 172.31),
+                          control1: CGPoint(x: group.minX + 111.16, y: group.minY + 152.66),
+                          control2: CGPoint(x: group.minX + 95.1, y: group.minY + 172.31))
+            return path
+        }
+    }
+
+
     var body: some View {
-        WindAngleInstrument()
+        ZStack {
+            DialBackgroundPath()
+            BowIndicator()
+        }
     }
 }
 
 struct WindAngleViewInstrument_Previews: PreviewProvider {
     static var previews: some View {
-        WindAngleView()
+        WindAngleInstrumentView()
     }
 }
 
+/*
 struct WindAngleInstrument: NSViewRepresentable {
     typealias NSViewType = DMWindAngleDial
 
@@ -581,3 +624,4 @@ class DMWindAngleDial : NSView {
     }
 
 }
+*/
