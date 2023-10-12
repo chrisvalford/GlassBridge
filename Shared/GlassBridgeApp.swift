@@ -12,6 +12,7 @@ struct GlassBridgeApp: App {
     let persistenceController = PersistenceController.shared
 #if os(macOS)
     @State private var isShowingTerminal = false
+    @State private var isShowingWind = false
 #endif
     
     var body: some Scene {
@@ -24,6 +25,11 @@ struct GlassBridgeApp: App {
                         .padding(8)
                         .frame(minWidth: 500, maxWidth: .infinity, minHeight: 600, maxHeight: .infinity)
                 })
+                .sheet(isPresented: $isShowingWind, content: {
+                    WindAngleInstrumentView()
+                        .padding(8)
+                        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 600, maxHeight: .infinity)
+                })
 #endif
         }
         
@@ -32,6 +38,10 @@ struct GlassBridgeApp: App {
             CommandMenu("Serial") {
                 Button("Terminal") { isShowingTerminal.toggle() }
                     .keyboardShortcut(KeyEquivalent("t"), modifiers: .option)
+            }
+            CommandMenu("Instruments") {
+                Button("Wind") { isShowingWind.toggle() }
+                    .keyboardShortcut(KeyEquivalent("w"), modifiers: .option)
             }
         }
 #endif

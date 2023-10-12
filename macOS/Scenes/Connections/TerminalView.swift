@@ -63,7 +63,6 @@ import SwiftUI
                                     .tag($0)
                             }
                         }
-                        
                         Text(" ")
                     }
                     HStack {

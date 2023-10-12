@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2F1CADA328310DD800646E1A /* WindAngleInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E01281A9E820098B05E /* WindAngleInstrumentView.swift */; };
-		2F1CADA428310DD800646E1A /* WindAngleInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E01281A9E820098B05E /* WindAngleInstrumentView.swift */; };
-		2F1CADAB2831258200646E1A /* WindAngleInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1CADA528310EBF00646E1A /* WindAngleInstrumentView.swift */; };
 		2F1CADAC2831258300646E1A /* WindAngleInstrumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1CADA528310EBF00646E1A /* WindAngleInstrumentView.swift */; };
 		2F1CADAE2831262E00646E1A /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1CADAD2831262E00646E1A /* Color+.swift */; };
 		2F858DD2281A9D630098B05E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858DD1281A9D630098B05E /* Tests_iOS.swift */; };
@@ -1990,7 +1988,6 @@
 				2F858F02281AA02D0098B05E /* String+.swift in Sources */,
 				2F859100281AA2600098B05E /* RMO.swift in Sources */,
 				2F8590CC281AA2600098B05E /* WDR.swift in Sources */,
-				2F1CADA428310DD800646E1A /* WindAngleInstrumentView.swift in Sources */,
 				2F858ED0281AA00D0098B05E /* DDFField.swift in Sources */,
 				2F858ED4281AA00D0098B05E /* DDFSubfieldDefinition.swift in Sources */,
 			);
@@ -2009,7 +2006,6 @@
 				2F858EB8281A9FCE0098B05E /* ConnectionEnums.swift in Sources */,
 				2F859159281AA2600098B05E /* NMEA0183Base.swift in Sources */,
 				2F859069281AA2600098B05E /* ALA.swift in Sources */,
-				2F1CADAB2831258200646E1A /* WindAngleInstrumentView.swift in Sources */,
 				2F859035281AA2600098B05E /* OSD.swift in Sources */,
 				2F8590F5281AA2600098B05E /* EVE.swift in Sources */,
 				2F8590CD281AA2600098B05E /* WDR.swift in Sources */,

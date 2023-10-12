@@ -111,6 +111,10 @@ class TerminalViewModel: ObservableObject, CommState {
         rtsState = terminalCommStateB.rtsState
         dtrState = terminalCommStateB.dtrState
         ports = findSerialPorts() ?? []
+
+        if ports.count > 0 {
+            selectedPortA = ports.first!
+        }
     }
 
     func findSerialPorts() -> [String]?
@@ -121,7 +125,7 @@ class TerminalViewModel: ObservableObject, CommState {
         if kernResult == KERN_SUCCESS {
             // List available ports
             if let paths = findSerialPaths(portIterator: portIterator) {
-                print(paths)
+                //print(paths)
                 return paths
             }
         }
