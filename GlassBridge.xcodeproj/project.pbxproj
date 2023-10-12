@@ -684,6 +684,7 @@
 		2FADBDCF281D26AA00D1FCBC /* RYA_TC4_C.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9A8746281BCD06004D1501 /* RYA_TC4_C.jpg */; };
 		2FB0B264281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
 		2FB0B265281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
+		2FC80DFC2AD8530800E54AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC80DFB2AD8530800E54AAF /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -901,6 +902,7 @@
 		2F9EB6B8281D1B7600A43846 /* iOS_TestNMEA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_TestNMEA.swift; sourceTree = "<group>"; };
 		2FADBDC3281D1E6E00D1FCBC /* GlassBridge--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GlassBridge--macOS--Info.plist"; sourceTree = "<group>"; };
 		2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Observed.swift"; sourceTree = "<group>"; };
+		2FC80DFB2AD8530800E54AAF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -988,6 +990,7 @@
 		2F858DC7281A9D630098B05E /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				2FC80DFB2AD8530800E54AAF /* AppDelegate.swift */,
 				2F858EAC281A9FCE0098B05E /* Models */,
 				2F858E95281A9FC50098B05E /* Scenes */,
 				2F858DC8281A9D630098B05E /* macOS.entitlements */,
@@ -1778,6 +1781,7 @@
 				2F858EEF281AA00D0098B05E /* DDFRecord.swift in Sources */,
 				2F859123281AA2600098B05E /* MSS.swift in Sources */,
 				2F858FBB281AA2600098B05E /* GSA.swift in Sources */,
+				2FC80DFC2AD8530800E54AAF /* AppDelegate.swift in Sources */,
 				2F8590FF281AA2600098B05E /* RMO.swift in Sources */,
 				2F858DE4281A9D630098B05E /* GlassBridgeApp.swift in Sources */,
 				2F858EDB281AA00D0098B05E /* ISO8211Enums.swift in Sources */,

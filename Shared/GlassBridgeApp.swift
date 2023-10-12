@@ -11,7 +11,8 @@ import SwiftUI
 struct GlassBridgeApp: App {
     let persistenceController = PersistenceController.shared
 #if os(macOS)
-    @State private var isShowingTerminal = false
+    @NSApplicationDelegateAdaptor private var appDelegate: AppDelegate
+    //@State private var isShowingTerminal = false
     @State private var isShowingWind = false
 #endif
     
@@ -20,11 +21,11 @@ struct GlassBridgeApp: App {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
 #if os(macOS)
-                .sheet(isPresented: $isShowingTerminal, content: {
-                    TerminalContainerView()
-                        .padding(8)
-                        .frame(minWidth: 500, maxWidth: .infinity, minHeight: 600, maxHeight: .infinity)
-                })
+//                .sheet(isPresented: $isShowingTerminal, content: {
+//                    TerminalContainerView()
+//                        .padding(8)
+//                        .frame(minWidth: 500, maxWidth: .infinity, minHeight: 600, maxHeight: .infinity)
+//                })
                 .sheet(isPresented: $isShowingWind, content: {
                     WindAngleInstrumentView()
                         .padding(8)
@@ -36,8 +37,11 @@ struct GlassBridgeApp: App {
 #if os(macOS)
         .commands {
             CommandMenu("Serial") {
-                Button("Terminal") { isShowingTerminal.toggle() }
-                    .keyboardShortcut(KeyEquivalent("t"), modifiers: .option)
+                Button("Terminal") {
+                    //                    isShowingTerminal.toggle()
+                    NSApp.sendAction(#selector(AppDelegate.openTerminalWindow), to: nil, from:nil)
+                }
+                .keyboardShortcut(KeyEquivalent("t"), modifiers: .option)
             }
             CommandMenu("Instruments") {
                 Button("Wind") { isShowingWind.toggle() }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TerminalContainerView: View {
-    @Environment(\.dismiss) var dismiss
+//    @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
             TabView {
@@ -29,10 +29,11 @@ struct TerminalContainerView: View {
                     Text("NMEA")
                 }
             }
-            Button("Close") {
-                dismiss()
-            }
+//            Button("Close") {
+//                dismiss()
+//            }
         }
+        .frame(minWidth: 520, minHeight: 300)
     }
 }
 
