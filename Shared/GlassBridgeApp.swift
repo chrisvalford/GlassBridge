@@ -11,27 +11,13 @@ import SwiftUI
 struct GlassBridgeApp: App {
     let persistenceController = PersistenceController.shared
 #if os(macOS)
-    @NSApplicationDelegateAdaptor private var appDelegate: AppDelegate
-    //@State private var isShowingTerminal = false
-    @State private var isShowingWind = false
+    @NSApplicationDelegateAdaptor private var appDelegate: AppDelegate_macOS
 #endif
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-#if os(macOS)
-//                .sheet(isPresented: $isShowingTerminal, content: {
-//                    TerminalContainerView()
-//                        .padding(8)
-//                        .frame(minWidth: 500, maxWidth: .infinity, minHeight: 600, maxHeight: .infinity)
-//                })
-                .sheet(isPresented: $isShowingWind, content: {
-                    WindAngleInstrumentView()
-                        .padding(8)
-                        .frame(minWidth: 600, maxWidth: .infinity, minHeight: 600, maxHeight: .infinity)
-                })
-#endif
         }
         
 #if os(macOS)
@@ -39,13 +25,15 @@ struct GlassBridgeApp: App {
             CommandMenu("Serial") {
                 Button("Terminal") {
                     //                    isShowingTerminal.toggle()
-                    NSApp.sendAction(#selector(AppDelegate.openTerminalWindow), to: nil, from:nil)
+                    NSApp.sendAction(#selector(AppDelegate_macOS.openTerminalWindow), to: nil, from:nil)
                 }
                 .keyboardShortcut(KeyEquivalent("t"), modifiers: .option)
             }
             CommandMenu("Instruments") {
-                Button("Wind") { isShowingWind.toggle() }
-                    .keyboardShortcut(KeyEquivalent("w"), modifiers: .option)
+                Button("Wind") {
+                    NSApp.sendAction(#selector(AppDelegate_macOS.openInstrumentsWindow), to: nil, from:nil)
+                }
+                .keyboardShortcut(KeyEquivalent("w"), modifiers: .option)
             }
         }
 #endif

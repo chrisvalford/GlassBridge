@@ -8,8 +8,9 @@
 import AppKit
 import SwiftUI
 
-class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
+class AppDelegate_macOS: NSObject, NSApplicationDelegate, ObservableObject {
     var terminalWindow: NSWindow!
+    var instrumentsWindow: NSWindow!
 
     func application(
         _ application: NSApplication,
@@ -19,23 +20,40 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         // Record the device token.
     }
 
-    @MainActor 
+    @MainActor
     @objc
     func openTerminalWindow() {
-            if nil == terminalWindow {      // create once !!
-                let terminalView = TerminalContainerView()
-                // Create the preferences window and set content
-                terminalWindow = NSWindow(
-                    contentRect: NSRect(x: 20, y: 20, width: 480, height: 300),
-                    styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-                    backing: .buffered,
-                    defer: false)
-                terminalWindow.center()
-                terminalWindow.setFrameAutosaveName("Preferences")
-                terminalWindow.isReleasedWhenClosed = false
-                terminalWindow.contentView = NSHostingView(rootView: terminalView)
-            }
-        terminalWindow.makeKeyAndOrderFront(nil)
+        if nil == terminalWindow {
+            let terminalView = TerminalContainerView()
+            terminalWindow = NSWindow(
+                contentRect: NSRect(x: 20, y: 20, width: 480, height: 300),
+                styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+                backing: .buffered,
+                defer: false)
+            terminalWindow.center()
+            terminalWindow.setFrameAutosaveName("Preferences")
+            terminalWindow.isReleasedWhenClosed = false
+            terminalWindow.contentView = NSHostingView(rootView: terminalView)
         }
+        terminalWindow.makeKeyAndOrderFront(nil)
+    }
+
+    @MainActor
+    @objc
+    func openInstrumentsWindow() {
+        if nil == instrumentsWindow {
+            let instrumentsView = InstrumentsContainerView()
+            instrumentsWindow = NSWindow(
+                contentRect: NSRect(x: 20, y: 20, width: 480, height: 300),
+                styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
+                backing: .buffered,
+                defer: false)
+            instrumentsWindow.center()
+            instrumentsWindow.setFrameAutosaveName("Preferences")
+            instrumentsWindow.isReleasedWhenClosed = false
+            instrumentsWindow.contentView = NSHostingView(rootView: instrumentsView)
+        }
+        instrumentsWindow.makeKeyAndOrderFront(nil)
+    }
 
 }

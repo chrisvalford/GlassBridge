@@ -685,6 +685,7 @@
 		2FB0B264281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
 		2FB0B265281C1F6F00821DB9 /* ContentView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */; };
 		2FC80DFC2AD8530800E54AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC80DFB2AD8530800E54AAF /* AppDelegate.swift */; };
+		2FC80DFE2AD856BF00E54AAF /* InstrumentsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC80DFD2AD856BF00E54AAF /* InstrumentsContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -903,6 +904,7 @@
 		2FADBDC3281D1E6E00D1FCBC /* GlassBridge--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GlassBridge--macOS--Info.plist"; sourceTree = "<group>"; };
 		2FB0B263281C1F6F00821DB9 /* ContentView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Observed.swift"; sourceTree = "<group>"; };
 		2FC80DFB2AD8530800E54AAF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FC80DFD2AD856BF00E54AAF /* InstrumentsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1040,6 +1042,7 @@
 				2F858E03281A9E820098B05E /* DMWindAngleDialView.swift */,
 				2F858E04281A9E820098B05E /* DMHeadingDial.swift */,
 				2F858E06281A9E820098B05E /* GPSTextViewController.swift */,
+				2FC80DFD2AD856BF00E54AAF /* InstrumentsContainerView.swift */,
 			);
 			path = Instruments;
 			sourceTree = "<group>";
@@ -1693,6 +1696,7 @@
 				2F859063281AA2600098B05E /* SFI.swift in Sources */,
 				2F858F97281AA2600098B05E /* SixBit.swift in Sources */,
 				2F85904B281AA2600098B05E /* ZFO.swift in Sources */,
+				2FC80DFE2AD856BF00E54AAF /* InstrumentsContainerView.swift in Sources */,
 				2F85915B281AA2600098B05E /* NMEAError.swift in Sources */,
 				2F858FCB281AA2600098B05E /* GRS.swift in Sources */,
 				2F8590EF281AA2600098B05E /* RMM.swift in Sources */,
