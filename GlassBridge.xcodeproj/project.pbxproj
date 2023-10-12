@@ -26,8 +26,6 @@
 		2F858DE8281A9D630098B05E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858DBA281A9D620098B05E /* Persistence.swift */; };
 		2F858DE9281A9D630098B05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F858DBB281A9D630098B05E /* Assets.xcassets */; };
 		2F858DEA281A9D630098B05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F858DBB281A9D630098B05E /* Assets.xcassets */; };
-		2F858E1B281A9E820098B05E /* DMWindAngleDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E03281A9E820098B05E /* DMWindAngleDialView.swift */; };
-		2F858E1D281A9E820098B05E /* DMWindAngleDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E03281A9E820098B05E /* DMWindAngleDialView.swift */; };
 		2F858E22281A9E820098B05E /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E05281A9E820098B05E /* GPSView.swift */; };
 		2F858E23281A9E820098B05E /* GPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E05281A9E820098B05E /* GPSView.swift */; };
 		2F858E3E281A9E820098B05E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F858E0D281A9E820098B05E /* ContentView.swift */; };
@@ -1762,7 +1760,6 @@
 				2F859143281AA2600098B05E /* HDT.swift in Sources */,
 				2F85909B281AA2600098B05E /* DCN.swift in Sources */,
 				2F85901F281AA2600098B05E /* XTR.swift in Sources */,
-				2F858E1B281A9E820098B05E /* DMWindAngleDialView.swift in Sources */,
 				2F859183281AA3810098B05E /* NSNotification+Name.swift in Sources */,
 				2F8590C7281AA2600098B05E /* ALM.swift in Sources */,
 				2F858F05281AA02D0098B05E /* UInt8+.swift in Sources */,
@@ -2054,7 +2051,6 @@
 				2F859190281AA8B50098B05E /* Persistence.swift in Sources */,
 				2F859019281AA2600098B05E /* AIVDM.swift in Sources */,
 				2F858FE9281AA2600098B05E /* RMF.swift in Sources */,
-				2F858E1D281A9E820098B05E /* DMWindAngleDialView.swift in Sources */,
 				2F85917C281AA30B0098B05E /* Conversions.swift in Sources */,
 				2F859029281AA2600098B05E /* RMC.swift in Sources */,
 				2F8590E9281AA2600098B05E /* RMV.swift in Sources */,

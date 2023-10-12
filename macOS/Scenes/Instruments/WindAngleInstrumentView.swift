@@ -9,9 +9,12 @@
 //  http://www.paintcodeapp.com
 //
 
-import UIKit
+import AppKit
 import Foundation
 import SwiftUI
+
+// This non-generic function dramatically improves compilation times of complex expressions.
+func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
 struct WindAngleInstrumentView: View {
 
@@ -21,9 +24,6 @@ struct WindAngleInstrumentView: View {
     static let color4 = Color(red: 0.698, green: 0.824, blue: 0.734)
     static let color5 = Color(red: 0.341, green: 0.978, blue: 0.000)
     static let color6 = Color(red: 0.333, green: 0.333, blue: 0.333)
-
-    // This non-generic function dramatically improves compilation times of complex expressions.
-    func fastFloor(_ x: CGFloat) -> CGFloat { return floor(x) }
 
     struct DialBackgroundPath: Shape {
         func path(in rect: CGRect) -> Path {
